@@ -17,6 +17,10 @@ public class Calculator {
         return a/b;
     }
 
+    public int modulo(int a, int b) {
+        return a % b;
+    }
+
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         System.out.println("Addition: " + calculator.add(10, 5));
@@ -24,5 +28,6 @@ public class Calculator {
         System.out.println("Multiplication: " + calculator.multiply(10, 5));
         System.out.println("Divisio: " + calculator.divide(10, 5));
         System.out.println("Divisio: " + calculator.divide(0, 5));
+        System.out.println("Modulo: " + calculator.modulo(0, 5));
     }
 }
