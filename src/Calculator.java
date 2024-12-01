@@ -21,6 +21,10 @@ public class Calculator {
         return a % b;
     }
 
+    public double sqrt(int a) {
+        return Math.sqrt(a);
+    }
+
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         System.out.println("Addition: " + calculator.add(10, 5));
@@ -29,5 +33,7 @@ public class Calculator {
         System.out.println("Divisio: " + calculator.divide(10, 5));
         System.out.println("Divisio: " + calculator.divide(0, 5));
         System.out.println("Modulo: " + calculator.modulo(0, 5));
+        System.out.println("Squared: " + calculator.sqrt(49));
+
     }
 }
